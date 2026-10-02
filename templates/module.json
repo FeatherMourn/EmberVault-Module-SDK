@@ -1,0 +1,15 @@
+{
+  "id": "embervault.example-module",
+  "name": "Example Module",
+  "version": "0.1.0",
+  "publisher": "Your Name",
+  "minimum_core_version": "1.0.0",
+  "capabilities": [],
+  "feature_state": "experimental",
+  "process_mode": "embedded",
+  "entrypoint": "src/module.py",
+  "contract_version": 1,
+  "safety": {"read_only": true, "requires_backup": true, "allowed_profiles": ["default", "research"]},
+  "recovery": {"rollback": "Discard the operation plan.", "verification": "Verify the operation result before any mutation."},
+  "operation_types": []
+}
